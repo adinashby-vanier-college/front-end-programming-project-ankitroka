@@ -1,0 +1,302 @@
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+.First-Page{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+.cover-picture {
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.profile-picture {
+    position: absolute; /* Position it over the cover picture */
+    top: 45%;
+    left: 200px; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure perfect centering */
+    width: 150px; /* Set size for the profile picture */
+    border-radius: 50%; /* Make it circular */
+}
+
+/*Ankit Roka*/
+p1 {
+    position: absolute;
+    color: rgb(17, 52, 80);
+    font-size: 35px;
+    font-family:'Trebuchet MS';
+    font-weight: bolder;
+    bottom: -35px;
+    left: 377px; 
+    top: 41%;
+    transform: translateX(-50%); /* Align with profile picture */
+    width: auto; /* Adjust automatically based on text content */
+}
+
+/*Cinematographer/Editor*/
+p2 {
+    position: absolute;
+    color: rgb(17, 52, 80);
+    font-size: 22px;
+    font-family:'Trebuchet MS';
+    font-weight: 600;
+    bottom: -35px;
+    left: 412px; /* Center relative to profile picture */
+    top: 45.5%;
+    transform: translateX(-50%); /* Align with profile picture */
+    width: auto; /* Adjust automatically based on text content */
+}
+
+/*Archive*/
+p3 {
+    font-family:'Trebuchet MS';
+    font-size: 22px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: absolute;
+    right: 240px; 
+    top: 4%;
+    transition: color 0.3s ease;
+}
+
+/*Contact*/
+p4 {
+    font-family:'Trebuchet MS';
+    font-size: 22px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: absolute;
+    right: 122px; 
+    top: 4%;
+    transition: color 0.3s ease;
+}
+
+/*About*/
+p5 {
+    font-family:'Trebuchet MS';
+    font-size: 22px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: absolute;
+    right: 25px; 
+    top: 4%;
+    transition: color 0.3s ease;
+}
+
+/*Work*/
+p6 {
+    font-family: 'Trebuchet MS';
+    font-size: 35px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+p8 {
+    font-family:'Trebuchet MS';
+    font-size: 22px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: absolute;
+    right: 365px; 
+    top: 4%;
+    transition: color 0.3s ease;
+}
+
+
+/*Hover*/
+p3:hover{
+    color: rgb(17, 52, 80);
+    cursor: pointer;
+}
+
+p4:hover{
+    color: rgb(17, 52, 80);
+    cursor: pointer;
+}
+
+p5:hover{
+    color: rgb(17, 52, 80);
+    cursor: pointer;
+}
+
+p8:hover{
+    color: rgb(17, 52, 80);
+    cursor: pointer;
+}
+
+/* The down arrow */
+.work-container {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    color: rgb(177, 177, 177);
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid rgb(177, 177, 177);
+    position:absolute;
+    top: calc(93% + 5px); 
+    transition: border-top-color 0.3s ease;
+    left: 36%;
+}
+
+.work-container a {
+    text-decoration: none;
+}
+
+.work-container a p6:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
+}
+
+/* Inherit hover color for the arrow */
+.Second-Page {
+    top: 0%;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 50px 20px 200px 20px;
+}
+
+/* Thumbnail styling */
+.video-thumbnail {
+    width: 100%; /* Make thumbnail fill the column */
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.video-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-title{
+    font-family:'Trebuchet MS';
+    font-weight: bold;
+    color: rgb(177, 177, 177);
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -35px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.video-title:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
+}
+
+.work-container2 {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    color: rgb(177, 177, 177);
+}
+
+p7 {
+    font-family: 'Trebuchet MS';
+    font-size: 35px;
+    color: rgb(177, 177, 177);
+    font-weight: bolder;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    transition: color 0.3s ease;
+    top: -20px;
+}
+
+.work-container2 a p7:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
+}
+
+.work-container2 a {
+    text-decoration: none;
+}
+
+.work-container2 a p7:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
+}
+
+.work-container2:hover .arrow-down {
+    border-top-color:rgb(30, 77, 114); 
+}
+
+/*Third Page*/
+.Third-Page{
+    top:0%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+
+
+.logo{
+    align-items: center;
+    width: 30px;
+}
+
+.Social-Media p{
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    color: rgb(177, 177, 177);
+}
+
+
+
