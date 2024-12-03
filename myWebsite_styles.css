@@ -364,11 +364,21 @@ p7 {
     color: rgb(177, 177, 177);
 }
 
+.Social-Media p:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
+}
+
 .mail{
     transition: color 0.3s ease;
     font-family: 'Trebuchet MS';
     font-size: 12px;
     color: rgb(177, 177, 177);
+}
+
+.mail:hover{
+    color: rgb(30, 77, 114); 
+    cursor: pointer;
 }
 
 .work-container3 {
