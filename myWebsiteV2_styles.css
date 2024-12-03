@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
 }
 
+/*First Page*/
 .First-Page{
     width: 100vw;
     height: 100vh;
@@ -31,12 +32,12 @@ body{
 }
 
 .profile-picture {
-    position: absolute; /* Position it over the cover picture */
+    position: absolute; /* Positions it over the cover picture */
     top: 45%;
-    left: 200px; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Ensure perfect centering */
-    width: 150px; /* Set size for the profile picture */
-    border-radius: 50%; /* Make it circular */
+    left: 200px;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    border-radius: 50%; /* Makes it circular */
 }
 
 /*Ankit Roka*/
@@ -114,7 +115,7 @@ p6 {
     text-align: center;
     transition: color 0.3s ease;
 }
-
+/*Stills*/
 p8 {
     font-family:'Trebuchet MS';
     font-size: 22px;
@@ -184,6 +185,7 @@ p8:hover{
     border-top-color:rgb(30, 77, 114); 
 }
 
+/*Second Page*/
 .Second-Page {
     top: 0%;
     width: 100%;
@@ -400,6 +402,7 @@ p7 {
     cursor: pointer;
 }
 
+/*About*/
 p9{
     font-family: 'Trebuchet MS';
     font-size: 35px;
@@ -475,7 +478,6 @@ h1{
 }
 
 /* Fifth Page */
-
 .Fifth-Page{
     width: 100%;
     height: 100vh;

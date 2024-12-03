@@ -1,6 +1,22 @@
+
+
+.rounded-enclosure {
+    border: 8px solid rgba(200, 200, 200, 0.5); /* Light gray border with transparency */
+    border-radius: 30px; /* Rounded corners */
+    padding: 20px; /* Adds space inside the border */
+    background-color: white; /* Optional: White background inside the border */
+    box-sizing: border-box; /* Ensures border and padding don't expand the container */
+    margin: 20px auto; /* Centers the container with space around it */
+    max-width: 1200px; /* Optional: Limits the width of the container */
+}
+
 .title-page {
-    width: 100%; /* Make the cover image span the full width of the container */
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    width: 90%;
+    height: 90%;
     text-align: center;
     margin: 0 auto;
 }
@@ -152,6 +168,7 @@ p5:hover{
 .work-container:hover .arrow-down {
     border-top-color:rgb(30, 77, 114); 
 }
+
 
 
 
